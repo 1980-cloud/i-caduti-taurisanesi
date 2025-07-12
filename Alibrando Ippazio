@@ -55,7 +55,8 @@
 
   <nav><a href="index.html">← Torna alla Home</a></nav>
 
-  <h1>Alibrando Ippazio</h1>
+ <li><a href="alibrando-ippazio.html">ALIBRANDO IPPAZIO</a></li>
+
 
   <!-- Se hai una foto mettila qui, altrimenti puoi togliere questo blocco -->
   <!-- <img src="img/alibrando_ippazio.jpg" alt="Foto Alibrando Ippazio" class="foto" /> -->
@@ -72,3 +73,4 @@
 
 </body>
 </html>
+Link scheda Alibrando Ippazio
