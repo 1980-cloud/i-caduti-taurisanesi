@@ -2,42 +2,38 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8" />
-  <title>Alibrando Ippazio – Caduto Taurisanese</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Alibrando Ippazio Cosimo Giovanni - Scheda Caduto</title>
   <style>
     body {
-      font-family: Garamond, serif;
-      margin: 40px auto;
-      max-width: 800px;
-      line-height: 1.8;
-      background-color: #fdfdfd;
-      color: #111;
+      font-family: Arial, sans-serif;
+      max-width: 700px;
+      margin: 30px auto;
+      padding: 10px;
+      background-color: #f9f9f9;
+      color: #333;
     }
-    header {
-      text-align: center;
-      margin-bottom: 30px;
+    h1 {
+      border-bottom: 2px solid #444;
+      padding-bottom: 10px;
     }
-    header h1 {
-      font-size: 2rem;
-      margin-bottom: 10px;
-    }
-    .scheda {
-      background: #fff;
+    img {
+      max-width: 100%;
+      height: auto;
+      margin: 20px 0;
       border: 1px solid #ccc;
-      border-left: 10px solid #008000;
-      padding: 20px;
-      border-radius: 8px;
     }
-    .scheda h2 {
-      color: #cc0000;
+    section {
+      margin-bottom: 20px;
     }
     footer {
-      margin-top: 30px;
-      text-align: center;
+      font-size: 0.9em;
+      color: #666;
+      border-top: 1px solid #ccc;
+      padding-top: 10px;
     }
     a {
-      color: #008000;
       text-decoration: none;
+      color: #0066cc;
     }
     a:hover {
       text-decoration: underline;
@@ -46,33 +42,45 @@
 </head>
 <body>
 
-  <header>
-    <h1>Alibrando Ippazio</h1>
-    <p>Caduto della Grande Guerra</p>
-  </header>
+  <h1>Alibrando Ippazio Cosimo Giovanni</h1>
 
-  <div class="scheda">
-    <h2>Dati Anagrafici</h2>
-    <p><strong>Data di nascita:</strong> 15 maggio 1888</p>
-    <p><strong>Luogo di nascita:</strong> Taurisano (LE)</p>
-    <p><strong>Genitori:</strong> Ippazio Maria e Picci Silvestra</p>
-    <p><strong>Professione:</strong> Contadino</p>
+  <section>
+    <strong>Data e luogo di nascita:</strong> 15 maggio 1888, Taurisano<br />
+    <strong>Data e luogo di morte:</strong> 2 ottobre 1915, Bosco Triangolare sul Carso (Monte San Michele)<br />
+    <strong>Reparto/Unità militare:</strong> 139° Reggimento Fanteria, Brigata Bari, 10ª Compagnia<br />
+    <strong>Ruolo/Grado:</strong> Soldato
+  </section>
 
-    <h2>Famiglia</h2>
-    <p>Coniugato il 9 agosto 1914 con Preite Concetta Immacolata (fu Oronzo e Licci Enza).</p>
-    <p>Padre di Alibrando Antonia Pasqualina, nata il 29 marzo 1915 a Taurisano.</p>
+  <section>
+    <h2>Biografia</h2>
+    <p>
+      Nato a Taurisano il 15 maggio 1888, da Ippazio Maria e da Picci Silvestra.  
+      Contadino di professione, si sposò il 9 agosto 1914 con Preite Concetta Immacolata, figlia di Oronzo e Licci Enza.  
+      Dal matrimonio nacque una figlia, Alibrando Antonia Pasqualina, venuta alla luce a Taurisano il 29 marzo 1915.
+      Era iscritto al Distretto Militare di Lecce con matricola n. 24431.
+    </p>
+  </section>
 
-    <h2>Dati Militari</h2>
-    <p><strong>Matricola:</strong> 24431 – Distretto Militare di Lecce</p>
-    <p><strong>Reparto:</strong> 139° Reggimento Fanteria, Brigata Bari, 10ª Compagnia</p>
+  <section>
+    <h2>Circostanze della morte</h2>
+    <p>
+      Caduto il 2 ottobre 1915 nel Bosco Triangolare, sul Carso (Monte San Michele),  
+      a causa dello scoppio di una granata nemica.
+    </p>
+  </section>
 
-    <h2>Data e luogo della morte</h2>
-    <p>Deceduto il 2 ottobre 1915 nel Bosco Triangolare sul Carso (Monte San Michele),</p>
-    <p>a causa dello scoppio di una granata nemica.</p>
-  </div>
+  <section>
+    <h2>Riconoscimenti</h2>
+    <p>Non risultano riconoscimenti ufficiali noti.</p>
+  </section>
+
+  <!-- Se hai una foto, inseriscila qui -->
+  <!-- <img src="../img/alibrando-ippazio.jpg" alt="Foto di Alibrando Ippazio Cosimo Giovanni" /> -->
+
+  <p><a href="../index.html">← Torna alla pagina principale</a></p>
 
   <footer>
-    <p><a href="caduti-parte1.html">← Torna all'elenco dei caduti</a></p>
+    <p><small>Fonte: Archivio storico di Taurisano</small></p>
   </footer>
 
 </body>
