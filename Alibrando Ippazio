@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <title>Alibrando Ippazio - Caduti Taurisanesi</title>
+
+  <!-- Favicon inline SVG (tricolore italiano stilizzato) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22><rect width=%2221.3%22 height=%2264%22 fill=%22%23007A33%22/><rect x=%2221.3%22 width=%2221.3%22 height=%2264%22 fill=%22%23fff%22/><rect x=%2242.6%22 width=%2221.3%22 height=%2264%22 fill=%22%23C8102E%22/></svg>">
+
+  <style>
+    body {
+      font-family: Garamond, serif;
+      max-width: 700px;
+      margin: 40px auto;
+      background: #fefefe;
+      padding: 20px;
+      border-radius: 10px;
+      color: #333;
+    }
+    h1 {
+      color: #007A33;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .info {
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+    }
+    .foto {
+      display: block;
+      margin: 0 auto 20px;
+      max-width: 300px;
+      border-radius: 8px;
+    }
+    .note {
+      font-style: italic;
+      color: #555;
+      margin-top: 20px;
+    }
+    a {
+      color: #C8102E;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    nav a {
+      color: #007A33;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <nav><a href="index.html">← Torna alla Home</a></nav>
+
+  <h1>Alibrando Ippazio</h1>
+
+  <!-- Se hai una foto mettila qui, altrimenti puoi togliere questo blocco -->
+  <!-- <img src="img/alibrando_ippazio.jpg" alt="Foto Alibrando Ippazio" class="foto" /> -->
+
+  <div class="info">
+    <p><strong>Data di nascita:</strong> [inserisci data]</p>
+    <p><strong>Luogo di nascita:</strong> [inserisci luogo]</p>
+    <p><strong>Note storiche:</strong> [inserisci informazioni biografiche]</p>
+  </div>
+
+  <div class="note">
+    <p>[Eventuali annotazioni o curiosità]</p>
+  </div>
+
+</body>
+</html>
