@@ -1,1 +1,83 @@
-<!DOCTYPE html><html lang='it'><head><meta charset='UTF-8'><title>Contatti</title><link rel='stylesheet' href='style.css'></head><body><h1>Contatti</h1><p>Per informazioni o contributi, contatta: info@example.com</p></body></html>
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contatti - Caduti Taurisanesi</title>
+  <style>
+    body {
+      font-family: Garamond, 'Times New Roman', serif;
+      background-color: #ffffff;
+      color: #222;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+    main {
+      max-width: 700px;
+      margin: 40px auto 60px;
+      padding: 20px;
+      background: #fefefe;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+    }
+    h1 {
+      text-align: center;
+      color: #007A33;
+      margin-bottom: 30px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    label {
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+    input, textarea {
+      font-family: Garamond, 'Times New Roman', serif;
+      font-size: 1rem;
+      padding: 8px;
+      border-radius: 5px;
+      border: 1px solid #999;
+      resize: vertical;
+    }
+    textarea {
+      min-height: 100px;
+    }
+    button {
+      background-color: #C8102E;
+      color: white;
+      font-weight: bold;
+      border: none;
+      padding: 12px;
+      font-size: 1.1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #A10B22;
+    }
+  </style>
+</head>
+<body>
+
+  <main>
+    <h1>Contatti</h1>
+    <form action="mailto:ancrtaurisano@virgilio.it" method="post" enctype="text/plain">
+      <label for="nome">Nome e Cognome:</label>
+      <input type="text" id="nome" name="nome" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="messaggio">Messaggio:</label>
+      <textarea id="messaggio" name="messaggio" required></textarea>
+
+      <button type="submit">Invia</button>
+    </form>
+  </main>
+
+</body>
+</html>
