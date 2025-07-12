@@ -12,57 +12,69 @@
       color: #333;
     }
 
+    /* Barre tricolore */
+    .tricolore-top,
+    .tricolore-bottom {
+      display: flex;
+      height: 30px;
+    }
+
+    .verde { background-color: #007a3d; flex: 1; }
+    .bianco { background-color: #ffffff; flex: 1; }
+    .rosso { background-color: #ce2b37; flex: 1; }
+
     header {
       text-align: center;
       background-color: #fff;
-      padding: 1.5rem 1rem;
+      padding: 1rem;
     }
 
-    header h2 {
+    .titolo span {
+      display: block;
       font-size: 2rem;
-      color: #006400;
-      margin-bottom: 1rem;
-      text-transform: uppercase;
+      font-weight: bold;
       letter-spacing: 1px;
     }
 
     header img {
-      max-width: 120px;
+      max-width: 100px;
       height: auto;
       display: block;
-      margin: 0 auto 1.5rem;
+      margin: 1rem auto;
     }
 
     main {
-      padding: 0 1rem;
+      padding: 2rem 1rem;
+      text-align: center;
     }
 
     .copertina {
+      max-width: 500px;
       width: 100%;
       height: auto;
+      border-radius: 8px;
+      margin: 0 auto 2rem;
       display: block;
     }
 
     h1 {
-      text-align: center;
-      margin: 2rem 0 1rem;
-      color: #006400;
+      color: #007a3d;
+      margin-bottom: 1.5rem;
     }
 
     ul {
       list-style: none;
       padding: 0;
-      text-align: center;
       font-size: 1.2rem;
     }
 
     li {
-      margin: 1rem 0;
+      margin: 0.8rem 0;
     }
 
     a {
       text-decoration: none;
-      color: #cc0000;
+      color: #ce2b37;
     }
 
     a:hover {
@@ -70,31 +82,42 @@
     }
 
     footer {
-      background: #fff;
-      padding: 2rem;
+      background: #f1f1f1;
       text-align: center;
+      padding: 1rem;
       font-style: italic;
-      color: #333;
-      border-top: 2px solid #ccc;
-      margin-top: 3rem;
+      font-size: 1rem;
     }
 
-    footer p {
-      margin: 0.5rem 0;
-      font-size: 1.3rem;
-      line-height: 1.6;
+    footer strong {
+      display: block;
+      margin-bottom: 0.5rem;
     }
+
   </style>
 </head>
 <body>
 
+  <!-- TRICOLORE ALTO -->
+  <div class="tricolore-top">
+    <div class="verde"></div>
+    <div class="bianco"></div>
+    <div class="rosso"></div>
+  </div>
+
+  <!-- HEADER -->
   <header>
-    <h2>ASSOCIAZIONE NAZIONALE COMBATTENTI E REDUCI<br>SEZIONE DI TAURISANO</h2>
+    <div class="titolo">
+      <span class="verde">ASSOCIAZIONE NAZIONALE</span>
+      <span class="bianco">COMBATTENTI E REDUCI</span>
+      <span class="rosso">SEZIONE DI TAURISANO</span>
+    </div>
     <img src="img/elmo.png" alt="Elmo simbolico" />
   </header>
 
+  <!-- MAIN -->
   <main>
-    <img class="copertina" src="img/copertina.jpeg" alt="Copertina Caduti Taurisanesi" />
+    <img src="img/copertina.jpeg" alt="Copertina Caduti Taurisanesi" class="copertina" />
 
     <h1>Elenco Caduti Taurisanesi</h1>
     <ul>
@@ -104,14 +127,19 @@
     </ul>
   </main>
 
+  <!-- TRICOLORE BASSO -->
+  <div class="tricolore-bottom">
+    <div class="verde"></div>
+    <div class="bianco"></div>
+    <div class="rosso"></div>
+  </div>
+
+  <!-- FOOTER -->
   <footer>
-    <p><strong>“Soldati” – Giuseppe Ungaretti</strong></p>
-    <p>Si sta come<br>
-    d'autunno<br>
-    sugli alberi<br>
-    le foglie</p>
+    <strong>“Soldati” – Giuseppe Ungaretti</strong>
+    <p>Si sta come<br> d'autunno<br> sugli alberi<br> le foglie</p>
+    <p>© 2025 Caduti Taurisanesi – Realizzato da Andrea Micaletto</p>
   </footer>
 
 </body>
 </html>
-
