@@ -3,54 +3,159 @@
 <head>
   <meta charset="UTF-8" />
   <title>Caduti Taurisanesi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans&display=swap" rel="stylesheet" />
   <style>
+    /* Reset base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: Arial, sans-serif;
-      margin: 40px;
-      max-width: 800px;
-      line-height: 1.6;
-      background: #f9f9f9;
+      font-family: 'Open Sans', sans-serif;
+      background-color: #f5f7fa;
       color: #333;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
     }
-    h1 {
-      text-align: center;
-      margin-bottom: 1.5rem;
+
+    header {
+      background-color: #1a2a6c;
+      color: white;
+      padding: 15px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
-    ul {
-      list-style: none;
-      padding-left: 0;
-      font-size: 1.2rem;
-    }
-    li {
-      margin: 0.8rem 0;
-    }
-    a {
-      text-decoration: none;
-      color: #0056b3;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
+
     header img {
+      height: 50px;
+      border-radius: 8px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #ff7e5f;
+    }
+
+    main {
+      flex-grow: 1;
+      max-width: 900px;
+      margin: 30px auto 60px;
+      padding: 0 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding-bottom: 40px;
+    }
+
+    main header img {
       width: 100%;
       height: auto;
-      display: block;
-      margin-bottom: 20px;
-      border-radius: 8px;
+      border-radius: 10px 10px 0 0;
+      margin-bottom: 25px;
+    }
+
+    h1 {
+      font-family: 'Merriweather', serif;
+      font-size: 2.4rem;
+      text-align: center;
+      margin-bottom: 30px;
+      color: #1a2a6c;
+    }
+
+    ul.caduti-list {
+      list-style: none;
+      font-size: 1.25rem;
+      padding-left: 0;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    ul.caduti-list li {
+      margin: 12px 0;
+    }
+
+    ul.caduti-list li a {
+      text-decoration: none;
+      color: #1a2a6c;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    ul.caduti-list li a:hover {
+      color: #ff7e5f;
+    }
+
+    footer {
+      background-color: #1a2a6c;
+      color: white;
+      text-align: center;
+      padding: 15px 20px;
+      font-size: 0.9rem;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      main {
+        margin: 15px 10px 40px;
+      }
     }
   </style>
 </head>
 <body>
 
   <header>
-    <img src="img/copertina1.jpeg" alt="Copertina Caduti Taurisanesi" />
+    <img src="img/copertina1.jpeg" alt="Logo Caduti Taurisanesi" />
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="caduti-parte1.html">Caduti A-M</a></li>
+        <li><a href="caduti-parte2.html">Caduti N-Z</a></li>
+        <li><a href="contatti.html">Contatti</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <h1>Elenco Caduti Taurisanesi</h1>
-  <ul>
-    <li><a href="caduti-parte1.html">Parte 1 - Nomi dalla A alla M</a></li>
-    <li><a href="caduti-parte2.html">Parte 2 - Nomi dalla N alla Z</a></li>
-  </ul>
+  <main>
+    <header>
+      <img src="img/copertina1.jpeg" alt="Copertina Caduti Taurisanesi" />
+    </header>
+
+    <h1>Elenco Caduti Taurisanesi</h1>
+    <ul class="caduti-list">
+      <li><a href="caduti-parte1.html">Parte 1 - Nomi dalla A alla M</a></li>
+      <li><a href="caduti-parte2.html">Parte 2 - Nomi dalla N alla Z</a></li>
+    </ul>
+  </main>
+
+  <footer>
+    &copy; 2025 Caduti Taurisanesi - Realizzato da Andrea Micaletto
+  </footer>
 
 </body>
 </html>
